@@ -4,12 +4,13 @@ import UseEffectCom from "./components/useEffectCom";
 import { Tabs, Tab } from "react-bootstrap";
 import UseMemoCom from "./components/useMemo";
 import UseRefCom from "./components/useRefCom";
+import UseContextCom from "./components/useContextCom";
 
 function App() {
   return (
     <Fragment>
       <Tabs
-        defaultActiveKey="useRef"
+        defaultActiveKey="useContextCom"
         id="uncontrolled-tab-example"
         className="mb-3"
       >
@@ -24,6 +25,9 @@ function App() {
         </Tab>
         <Tab eventKey="useRef" title="UseRef">
           <UseRefCom />
+        </Tab>
+        <Tab eventKey="useContextCom" title="UseContextCom">
+          <UseContextCom />
         </Tab>
       </Tabs>
     </Fragment>
