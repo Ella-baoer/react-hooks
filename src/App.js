@@ -6,12 +6,13 @@ import UseMemoCom from "./components/useMemo";
 import UseRefCom from "./components/useRefCom";
 import UseContextCom from "./components/useContextCom";
 import UseReducerCom from "./components/useReducerCom";
+import UseCallBackCom from "./components/useCallBackCom";
 
 function App() {
   return (
     <Fragment>
       <Tabs
-        defaultActiveKey="useReducerCom"
+        defaultActiveKey="useCallBackCom"
         id="uncontrolled-tab-example"
         className="mb-3"
       >
@@ -32,6 +33,9 @@ function App() {
         </Tab>
         <Tab eventKey="useReducerCom" title="UseReducerCom">
           <UseReducerCom />
+        </Tab>
+        <Tab eventKey="useCallBackCom" title="UseCallBackCom">
+          <UseCallBackCom />
         </Tab>
       </Tabs>
     </Fragment>

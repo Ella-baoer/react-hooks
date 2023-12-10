@@ -17,7 +17,9 @@ const UseEffectCom = () => {
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
       .then(response => response.json())
-      .then(json => console.log(json))
+      .then(json => { 
+        // todo 
+      })
   }, [resourceType])
   return (
     <Fragment>
